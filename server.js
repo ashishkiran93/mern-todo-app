@@ -12,7 +12,7 @@
 
 //  database configuration
  const db = process.env.db
- mongoose.connect(db, {
+ mongoose.connect('db', {
      useCreateIndex:true,
      useUnifiedTopology:true,
      useNewUrlParser:true,
