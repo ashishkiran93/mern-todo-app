@@ -11,8 +11,8 @@
  app.use('/api/todo',Item)
 
 //  database configuration
- const db = process.env.db
- mongoose.connect('db', {
+ const db = process.env.DB
+ mongoose.connect(db, {
      useCreateIndex:true,
      useUnifiedTopology:true,
      useNewUrlParser:true,
