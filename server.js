@@ -21,7 +21,7 @@
    .catch(err=>console.log(`manual error from db ${err}`))
 
 // Port Connection
- const port = process.env.port||5000
+ const port = process.env.PORT||5000
 
 //  Production code
  if(process.env.NODE_ENV==="production"){
