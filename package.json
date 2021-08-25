@@ -1,0 +1,20 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "MERN todo app",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Ashish Kiran",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.8"
+  },
+  "engines": {
+    "node": "14.17.3"
+}
+}
